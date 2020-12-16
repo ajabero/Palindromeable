@@ -2,8 +2,6 @@
 //  AppDelegate.swift
 //  Palindromeable
 //
-//  Created by Asaad Jaber on 12/16/20.
-//
 
 import UIKit
 

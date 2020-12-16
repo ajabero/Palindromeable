@@ -8,7 +8,6 @@ import XCTest
 
 class PalindromeableTests: XCTestCase {
 
-
     override func setUp() {
         super.setUp()
     }
@@ -17,40 +16,26 @@ class PalindromeableTests: XCTestCase {
         "",
         "a",
         "ab",
-        "abc"
+        "abc",
     ]
     
     let expectedPass = [
-        "nrr",
-        "rnn",
-        "nnrrssu",
-        "nrrssuu",
-        "nnrssuu",
-        "nnrrssuu",
-        "nnnrrssuu",
-        "nnrrssuuu"
+        "Pot Spot",
+        "Car Race",
+        "Gym my",
+        "Mer sir is rum rudder"
     ]
     
-    let stressCasesNegative = [
-        "nnnrrssuuu",
-        "nnrrssud",
-    ]
-    
-    func testFail() {
+    func testPalindromeableExpectedFail() {
         for str in expectedFail {
-            XCTAssertFalse(InputViewController().mapPairs(sorted: str), "Expected fail, failed: \(str).")
+            XCTAssertFalse(Palindromeable(str: str).isPalindromeable())
         }
     }
     
-    func testPass() {
+    func testPalindromeableExpectedPass() {
         for str in expectedPass {
-            XCTAssertTrue(InputViewController().mapPairs(sorted: str), "Expected pass, failed: \(str).")
+            XCTAssertTrue(Palindromeable(str: str).isPalindromeable())
         }
     }
-    
-    func testNegativeStressCases() {
-        for str in stressCasesNegative {
-            XCTAssertFalse(InputViewController().mapPairs(sorted: str), "Expected stress case fail, failed: \(str).")
-        }
-    }
+
 }

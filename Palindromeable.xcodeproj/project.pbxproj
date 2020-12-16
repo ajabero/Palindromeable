@@ -7,11 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E6011A3258AAF4400A6DEF7 /* StringFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6011A2258AAF4400A6DEF7 /* StringFormatter.swift */; };
+		4E6011A8258AAFD800A6DEF7 /* StringFormatterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6011A7258AAFD800A6DEF7 /* StringFormatterTests.swift */; };
+		4E6011B6258AB53A00A6DEF7 /* MapPairs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6011B5258AB53A00A6DEF7 /* MapPairs.swift */; };
+		4E6011C9258AB59F00A6DEF7 /* MapPairTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6011C8258AB59F00A6DEF7 /* MapPairTests.swift */; };
 		4E6AADBC258A6BBD006B773C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E6AADBB258A6BBD006B773C /* Assets.xcassets */; };
 		4E6AADCA258A6BBD006B773C /* PalindromeableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6AADC9258A6BBD006B773C /* PalindromeableTests.swift */; };
 		4E6AADD5258A6BBD006B773C /* PalindromeableUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6AADD4258A6BBD006B773C /* PalindromeableUITests.swift */; };
 		4E6AADE9258A6CD4006B773C /* InputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6AADE8258A6CD4006B773C /* InputViewController.swift */; };
 		4EDBAFE5258A7E1F0051EB57 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6AADB2258A6BBA006B773C /* AppDelegate.swift */; };
+		4EDC145C258A9A7A00974BC6 /* LSDSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDC145B258A9A7A00974BC6 /* LSDSort.swift */; };
+		4EDC1463258A9C5D00974BC6 /* Palindromeable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDC1462258A9C5D00974BC6 /* Palindromeable.swift */; };
+		4EDC146B258A9E7200974BC6 /* LSDSortTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDC146A258A9E7200974BC6 /* LSDSortTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +39,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4E6011A2258AAF4400A6DEF7 /* StringFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringFormatter.swift; sourceTree = "<group>"; };
+		4E6011A7258AAFD800A6DEF7 /* StringFormatterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StringFormatterTests.swift; path = PalindromeableTests/StringFormatterTests.swift; sourceTree = SOURCE_ROOT; };
+		4E6011B5258AB53A00A6DEF7 /* MapPairs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPairs.swift; sourceTree = "<group>"; };
+		4E6011C8258AB59F00A6DEF7 /* MapPairTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPairTests.swift; sourceTree = "<group>"; };
+		4E6011D3258AB92100A6DEF7 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		4E6AADAF258A6BBA006B773C /* Palindromeable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Palindromeable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E6AADB2258A6BBA006B773C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4E6AADBB258A6BBD006B773C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -44,6 +56,9 @@
 		4E6AADE8258A6CD4006B773C /* InputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputViewController.swift; sourceTree = "<group>"; };
 		4E6AAE0A258A78CA006B773C /* TestPlan.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = TestPlan.xctestplan; sourceTree = "<group>"; };
 		4EDBAFD6258A7DC90051EB57 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4EDC145B258A9A7A00974BC6 /* LSDSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSDSort.swift; sourceTree = "<group>"; };
+		4EDC1462258A9C5D00974BC6 /* Palindromeable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Palindromeable.swift; sourceTree = "<group>"; };
+		4EDC146A258A9E7200974BC6 /* LSDSortTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSDSortTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,9 +86,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4E601187258AA82C00A6DEF7 /* Algo */ = {
+			isa = PBXGroup;
+			children = (
+				4EDC1462258A9C5D00974BC6 /* Palindromeable.swift */,
+				4E6011B5258AB53A00A6DEF7 /* MapPairs.swift */,
+			);
+			path = Algo;
+			sourceTree = "<group>";
+		};
+		4E6011A1258AAF2800A6DEF7 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				4E6011A2258AAF4400A6DEF7 /* StringFormatter.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
 		4E6AADA6258A6BBA006B773C = {
 			isa = PBXGroup;
 			children = (
+				4E6011D3258AB92100A6DEF7 /* README.md */,
 				4E6AADB1258A6BBA006B773C /* Palindromeable */,
 				4E6AADC8258A6BBD006B773C /* PalindromeableTests */,
 				4E6AADD3258A6BBD006B773C /* PalindromeableUITests */,
@@ -95,7 +128,10 @@
 			isa = PBXGroup;
 			children = (
 				4E6AADB2258A6BBA006B773C /* AppDelegate.swift */,
-				4E6AADE8258A6CD4006B773C /* InputViewController.swift */,
+				4E601187258AA82C00A6DEF7 /* Algo */,
+				4EDC1476258A9EA100974BC6 /* ViewController */,
+				4EDC1475258A9E7D00974BC6 /* Sort */,
+				4E6011A1258AAF2800A6DEF7 /* Helper */,
 				4E6AADBB258A6BBD006B773C /* Assets.xcassets */,
 				4EDBAFD6258A7DC90051EB57 /* Info.plist */,
 			);
@@ -107,6 +143,9 @@
 			children = (
 				4E6AAE0A258A78CA006B773C /* TestPlan.xctestplan */,
 				4E6AADC9258A6BBD006B773C /* PalindromeableTests.swift */,
+				4E6011C8258AB59F00A6DEF7 /* MapPairTests.swift */,
+				4EDC146A258A9E7200974BC6 /* LSDSortTests.swift */,
+				4E6011A7258AAFD800A6DEF7 /* StringFormatterTests.swift */,
 				4E6AADCB258A6BBD006B773C /* Info.plist */,
 			);
 			path = PalindromeableTests;
@@ -119,6 +158,22 @@
 				4E6AADD6258A6BBD006B773C /* Info.plist */,
 			);
 			path = PalindromeableUITests;
+			sourceTree = "<group>";
+		};
+		4EDC1475258A9E7D00974BC6 /* Sort */ = {
+			isa = PBXGroup;
+			children = (
+				4EDC145B258A9A7A00974BC6 /* LSDSort.swift */,
+			);
+			path = Sort;
+			sourceTree = "<group>";
+		};
+		4EDC1476258A9EA100974BC6 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4E6AADE8258A6CD4006B773C /* InputViewController.swift */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,6 +306,10 @@
 			files = (
 				4EDBAFE5258A7E1F0051EB57 /* AppDelegate.swift in Sources */,
 				4E6AADE9258A6CD4006B773C /* InputViewController.swift in Sources */,
+				4EDC1463258A9C5D00974BC6 /* Palindromeable.swift in Sources */,
+				4EDC145C258A9A7A00974BC6 /* LSDSort.swift in Sources */,
+				4E6011B6258AB53A00A6DEF7 /* MapPairs.swift in Sources */,
+				4E6011A3258AAF4400A6DEF7 /* StringFormatter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,7 +317,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E6011A8258AAFD800A6DEF7 /* StringFormatterTests.swift in Sources */,
 				4E6AADCA258A6BBD006B773C /* PalindromeableTests.swift in Sources */,
+				4E6011C9258AB59F00A6DEF7 /* MapPairTests.swift in Sources */,
+				4EDC146B258A9E7200974BC6 /* LSDSortTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
