@@ -20,7 +20,9 @@ class MapPairs {
             let ind = i - incr
                         
             if ind == strArr.count - 1 {
-                if oddChar != 0  {
+                if oddChar == 0  {
+                    return true
+                } else {
                     return false
                 }
             }
