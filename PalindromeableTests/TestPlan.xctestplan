@@ -1,0 +1,31 @@
+{
+  "configurations" : [
+    {
+      "id" : "60B3D147-89ED-4B9C-B582-2AA1CD91316A",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:Palindromeable.xcodeproj",
+        "identifier" : "4E6AADC4258A6BBD006B773C",
+        "name" : "PalindromeableTests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:Palindromeable.xcodeproj",
+        "identifier" : "4E6AADCF258A6BBD006B773C",
+        "name" : "PalindromeableUITests"
+      }
+    }
+  ],
+  "version" : 1
+}
