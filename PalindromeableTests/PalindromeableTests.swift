@@ -17,13 +17,23 @@ class PalindromeableTests: XCTestCase {
         "",
         "a",
         "ab",
+        "abc"
     ]
     
     let expectedPass = [
-        "opp",
+        "nrr",
+        "rnn",
+        "nnrrssu",
+        "nrrssuu",
+        "nnrssuu",
         "nnrrssuu",
         "nnnrrssuu",
-        "nnnnrrssuu"
+        "nnrrssuuu"
+    ]
+    
+    let stressCasesNegative = [
+        "nnnrrssuuu",
+        "nnrrssud",
     ]
     
     func testFail() {
@@ -38,4 +48,9 @@ class PalindromeableTests: XCTestCase {
         }
     }
     
+    func testNegativeStressCases() {
+        for str in stressCasesNegative {
+            XCTAssertFalse(InputViewController().mapPairs(sorted: str), "Expected stress case fail, failed: \(str).")
+        }
+    }
 }
