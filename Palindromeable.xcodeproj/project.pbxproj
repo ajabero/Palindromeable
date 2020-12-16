@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4E6AADB3258A6BBA006B773C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6AADB2258A6BBA006B773C /* AppDelegate.swift */; };
 		4E6AADBC258A6BBD006B773C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E6AADBB258A6BBD006B773C /* Assets.xcassets */; };
 		4E6AADCA258A6BBD006B773C /* PalindromeableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6AADC9258A6BBD006B773C /* PalindromeableTests.swift */; };
 		4E6AADD5258A6BBD006B773C /* PalindromeableUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6AADD4258A6BBD006B773C /* PalindromeableUITests.swift */; };
 		4E6AADE9258A6CD4006B773C /* InputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6AADE8258A6CD4006B773C /* InputViewController.swift */; };
+		4EDBAFE5258A7E1F0051EB57 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6AADB2258A6BBA006B773C /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +35,6 @@
 		4E6AADAF258A6BBA006B773C /* Palindromeable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Palindromeable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E6AADB2258A6BBA006B773C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4E6AADBB258A6BBD006B773C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		4E6AADC0258A6BBD006B773C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4E6AADC5258A6BBD006B773C /* PalindromeableTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PalindromeableTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E6AADC9258A6BBD006B773C /* PalindromeableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalindromeableTests.swift; sourceTree = "<group>"; };
 		4E6AADCB258A6BBD006B773C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -44,6 +43,7 @@
 		4E6AADD6258A6BBD006B773C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4E6AADE8258A6CD4006B773C /* InputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputViewController.swift; sourceTree = "<group>"; };
 		4E6AAE0A258A78CA006B773C /* TestPlan.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = TestPlan.xctestplan; sourceTree = "<group>"; };
+		4EDBAFD6258A7DC90051EB57 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,7 +97,7 @@
 				4E6AADB2258A6BBA006B773C /* AppDelegate.swift */,
 				4E6AADE8258A6CD4006B773C /* InputViewController.swift */,
 				4E6AADBB258A6BBD006B773C /* Assets.xcassets */,
-				4E6AADC0258A6BBD006B773C /* Info.plist */,
+				4EDBAFD6258A7DC90051EB57 /* Info.plist */,
 			);
 			path = Palindromeable;
 			sourceTree = "<group>";
@@ -249,7 +249,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4E6AADB3258A6BBA006B773C /* AppDelegate.swift in Sources */,
+				4EDBAFE5258A7E1F0051EB57 /* AppDelegate.swift in Sources */,
 				4E6AADE9258A6CD4006B773C /* InputViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -8,12 +8,9 @@ import XCTest
 
 class PalindromeableTests: XCTestCase {
 
-    var inputViewController: InputViewController!
 
     override func setUp() {
         super.setUp()
-        
-        inputViewController = InputViewController()
     }
     
     let expectedFail = [
@@ -31,13 +28,13 @@ class PalindromeableTests: XCTestCase {
     
     func testFail() {
         for str in expectedFail {
-            XCTAssertFalse(inputViewController.mapPairs(sorted: str), "Did not fail test for: \(str).")
+            XCTAssertFalse(InputViewController().mapPairs(sorted: str), "Expected fail, failed: \(str).")
         }
     }
     
     func testPass() {
         for str in expectedPass {
-            XCTAssertTrue(inputViewController.mapPairs(sorted: str), "Did not pass test for: \(str).")
+            XCTAssertTrue(InputViewController().mapPairs(sorted: str), "Expected pass, failed: \(str).")
         }
     }
     
