@@ -125,7 +125,6 @@
 		4E6011E3258AD59F00A6DEF7 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				4E6011F3258AD69100A6DEF7 /* CellViewModel.swift */,
 				4E6011E6258AD5E400A6DEF7 /* GridCell.swift */,
 				4E6011FB258AD71900A6DEF7 /* CellLabel.swift */,
 			);
@@ -143,6 +142,7 @@
 		4E6011E5258AD5AE00A6DEF7 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				4E6011F3258AD69100A6DEF7 /* CellViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
