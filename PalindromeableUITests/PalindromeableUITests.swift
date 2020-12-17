@@ -22,15 +22,67 @@ class PalindromeableUITests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() throws {
+    func testPalindromeableKeyReturnsTrueLabel() throws {
         // UI tests must launch the application that they test.
         let app = XCUIApplication()
         app.launch()
+        
+        app.navigationBars["Palindromeable"].searchFields["Search"].tap()
+        
+        let searchSearchField = app.navigationBars["Palindromeable"].searchFields["Search"]
+        searchSearchField.tap()
+        searchSearchField.typeText("Pot Spot")
 
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+
+        app.buttons["Search"].tap()
+        
+        XCTAssertTrue(app.collectionViews/*@START_MENU_TOKEN@*/.staticTexts["True"]/*[[".cells.staticTexts[\"True\"]",".staticTexts[\"True\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.exists)
+    }
+    
+    func testNonPalindromeableKeyReturnsFalseLabel() throws {
+        let app = XCUIApplication()
+        app.launch()
+        
+        app.navigationBars["Palindromeable"].searchFields["Search"].tap()
+        
+        let searchSearchField = app.navigationBars["Palindromeable"].searchFields["Search"]
+        searchSearchField.tap()
+        searchSearchField.typeText("Robots")
+
+        app.buttons["Search"].tap()
+        
+        XCTAssertTrue(app.collectionViews.staticTexts["False"].exists)
     }
 
+    func testEmptySearchControllerDismissalOnTapReturnsEmptyLabel() throws {
+        let app = XCUIApplication()
+        app.launch()
+                
+        app.navigationBars["Palindromeable"].searchFields["Search"].tap()
+        app/*@START_MENU_TOKEN@*/.otherElements["PopoverDismissRegion"]/*[[".otherElements[\"dismiss popup\"]",".otherElements[\"PopoverDismissRegion\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+
+        XCTAssertFalse(app.collectionViews.staticTexts[""].exists)
+
+    }
+    
+    func testSearchControllerDismissalAfterResultReturnsEmptyLabel() throws {
+        let app = XCUIApplication()
+        app.launch()
+        
+        let searchSearchField = app.navigationBars["Palindromeable"].searchFields["Search"]
+        searchSearchField.tap()
+        searchSearchField.typeText("Pot Spot")
+
+        app.buttons["Search"].tap()
+        
+        XCTAssertTrue(app.collectionViews/*@START_MENU_TOKEN@*/.staticTexts["True"]/*[[".cells.staticTexts[\"True\"]",".staticTexts[\"True\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.exists)
+        
+        searchSearchField.tap()
+        app/*@START_MENU_TOKEN@*/.otherElements["PopoverDismissRegion"]/*[[".otherElements[\"dismiss popup\"]",".otherElements[\"PopoverDismissRegion\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+
+        XCTAssertFalse(app.collectionViews.staticTexts[""].exists)
+    }
+    
     func testLaunchPerformance() throws {
         if #available(macOS 10.15, iOS 13.0, tvOS 13.0, *) {
             // This measures how long it takes to launch your application.
