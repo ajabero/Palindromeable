@@ -27,8 +27,8 @@ class SearchController: UISearchController, UISearchBarDelegate {
         didPressSearch?(searchKey)
     }
     
-    func searchBarTextDidEndEditing(_ searchBar: UISearchBar) {
-        if searchKey == "" {
+    override func viewWillDisappear(_ animated: Bool) {
+        if searchBar.text == "" {
             didPressSearch?(nil)
         }
     }
