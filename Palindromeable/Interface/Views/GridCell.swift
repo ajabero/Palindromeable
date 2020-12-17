@@ -38,7 +38,7 @@ class GridCell: UICollectionViewCell {
     var label: CellLabel!
     
     func configureLabel() {
-        label = CellLabel(fontSize: 52.0, fontWeight: .light)
+        label = CellLabel(fontSize: 52.0, fontWeight: .medium)
         label.textColor = UIColor.white
         addSubview(label)
         
