@@ -11,6 +11,11 @@
 		4E6011A8258AAFD800A6DEF7 /* StringFormatterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6011A7258AAFD800A6DEF7 /* StringFormatterTests.swift */; };
 		4E6011B6258AB53A00A6DEF7 /* MapPairs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6011B5258AB53A00A6DEF7 /* MapPairs.swift */; };
 		4E6011C9258AB59F00A6DEF7 /* MapPairTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6011C8258AB59F00A6DEF7 /* MapPairTests.swift */; };
+		4E6011D8258AD3A400A6DEF7 /* SearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6011D7258AD3A400A6DEF7 /* SearchController.swift */; };
+		4E6011E7258AD5E400A6DEF7 /* GridCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6011E6258AD5E400A6DEF7 /* GridCell.swift */; };
+		4E6011EF258AD61B00A6DEF7 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6011EE258AD61B00A6DEF7 /* DataSource.swift */; };
+		4E6011F4258AD69100A6DEF7 /* CellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6011F3258AD69100A6DEF7 /* CellViewModel.swift */; };
+		4E6011FC258AD71900A6DEF7 /* CellLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6011FB258AD71900A6DEF7 /* CellLabel.swift */; };
 		4E6AADBC258A6BBD006B773C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E6AADBB258A6BBD006B773C /* Assets.xcassets */; };
 		4E6AADCA258A6BBD006B773C /* PalindromeableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6AADC9258A6BBD006B773C /* PalindromeableTests.swift */; };
 		4E6AADD5258A6BBD006B773C /* PalindromeableUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6AADD4258A6BBD006B773C /* PalindromeableUITests.swift */; };
@@ -44,6 +49,11 @@
 		4E6011B5258AB53A00A6DEF7 /* MapPairs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPairs.swift; sourceTree = "<group>"; };
 		4E6011C8258AB59F00A6DEF7 /* MapPairTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPairTests.swift; sourceTree = "<group>"; };
 		4E6011D3258AB92100A6DEF7 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		4E6011D7258AD3A400A6DEF7 /* SearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchController.swift; sourceTree = "<group>"; };
+		4E6011E6258AD5E400A6DEF7 /* GridCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridCell.swift; sourceTree = "<group>"; };
+		4E6011EE258AD61B00A6DEF7 /* DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
+		4E6011F3258AD69100A6DEF7 /* CellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellViewModel.swift; sourceTree = "<group>"; };
+		4E6011FB258AD71900A6DEF7 /* CellLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellLabel.swift; sourceTree = "<group>"; };
 		4E6AADAF258A6BBA006B773C /* Palindromeable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Palindromeable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E6AADB2258A6BBA006B773C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4E6AADBB258A6BBD006B773C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -103,6 +113,40 @@
 			path = Helper;
 			sourceTree = "<group>";
 		};
+		4E6011E2258AD58D00A6DEF7 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4E6AADE8258A6CD4006B773C /* InputViewController.swift */,
+				4E6011D7258AD3A400A6DEF7 /* SearchController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		4E6011E3258AD59F00A6DEF7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4E6011F3258AD69100A6DEF7 /* CellViewModel.swift */,
+				4E6011E6258AD5E400A6DEF7 /* GridCell.swift */,
+				4E6011FB258AD71900A6DEF7 /* CellLabel.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4E6011E4258AD5A700A6DEF7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4E6011EE258AD61B00A6DEF7 /* DataSource.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4E6011E5258AD5AE00A6DEF7 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		4E6AADA6258A6BBA006B773C = {
 			isa = PBXGroup;
 			children = (
@@ -129,7 +173,7 @@
 			children = (
 				4E6AADB2258A6BBA006B773C /* AppDelegate.swift */,
 				4E601187258AA82C00A6DEF7 /* Algo */,
-				4EDC1476258A9EA100974BC6 /* ViewController */,
+				4EDC1476258A9EA100974BC6 /* Interface */,
 				4EDC1475258A9E7D00974BC6 /* Sort */,
 				4E6011A1258AAF2800A6DEF7 /* Helper */,
 				4E6AADBB258A6BBD006B773C /* Assets.xcassets */,
@@ -168,12 +212,15 @@
 			path = Sort;
 			sourceTree = "<group>";
 		};
-		4EDC1476258A9EA100974BC6 /* ViewController */ = {
+		4EDC1476258A9EA100974BC6 /* Interface */ = {
 			isa = PBXGroup;
 			children = (
-				4E6AADE8258A6CD4006B773C /* InputViewController.swift */,
+				4E6011E2258AD58D00A6DEF7 /* ViewController */,
+				4E6011E4258AD5A700A6DEF7 /* Model */,
+				4E6011E3258AD59F00A6DEF7 /* Views */,
+				4E6011E5258AD5AE00A6DEF7 /* ViewModel */,
 			);
-			path = ViewController;
+			path = Interface;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -304,12 +351,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E6011F4258AD69100A6DEF7 /* CellViewModel.swift in Sources */,
 				4EDBAFE5258A7E1F0051EB57 /* AppDelegate.swift in Sources */,
 				4E6AADE9258A6CD4006B773C /* InputViewController.swift in Sources */,
 				4EDC1463258A9C5D00974BC6 /* Palindromeable.swift in Sources */,
+				4E6011EF258AD61B00A6DEF7 /* DataSource.swift in Sources */,
+				4E6011D8258AD3A400A6DEF7 /* SearchController.swift in Sources */,
+				4E6011FC258AD71900A6DEF7 /* CellLabel.swift in Sources */,
 				4EDC145C258A9A7A00974BC6 /* LSDSort.swift in Sources */,
 				4E6011B6258AB53A00A6DEF7 /* MapPairs.swift in Sources */,
 				4E6011A3258AAF4400A6DEF7 /* StringFormatter.swift in Sources */,
+				4E6011E7258AD5E400A6DEF7 /* GridCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

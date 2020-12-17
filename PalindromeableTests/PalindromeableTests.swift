@@ -23,7 +23,8 @@ class PalindromeableTests: XCTestCase {
         "Pot Spot",
         "Car Race",
         "Gym my",
-        "Mer sir is rum rudder"
+        "Mer sir is rum rudder",
+        "$$%%##&&"
     ]
     
     func testPalindromeableExpectedFail() {

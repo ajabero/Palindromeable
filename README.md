@@ -6,6 +6,5 @@ Approach:
 - The algorithm optimizes for time complexity, and runs in O(n) time. 
 
 Assumptions:
-- Input string can only contain upper or lowercase alphabet characters, or spaces.
 - Strings shorter than 3 characters always return false.
 
